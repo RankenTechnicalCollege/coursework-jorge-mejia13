@@ -1,0 +1,70 @@
+/* 
+Name: Jorge Mejia
+File: styles.css
+Date: 8/12/25
+*/
+
+/* css reset */
+body, header, nav, ul, li, img, main, footer {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* style rules for header */
+header {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header h3 {
+    font-weight: 400;
+}
+
+/* style rules for nav */
+nav {
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #4242a8;
+    padding: 2em 1em;
+    font-weight: bold;
+}
+
+/* main content */
+#home {
+    text-align: center;
+}
+
+#home h2 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2em;
+}
+
+/* footer content */
+footer {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+footer p a {
+    text-decoration: none;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #b8b8b8;
+}
