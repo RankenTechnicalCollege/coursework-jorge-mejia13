@@ -10,10 +10,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Strike a Chord: Contact</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <h1>&#9836; Strike a Chord &#9836;</h1>
+        <h1><span class="tab-desk">&#9836;Strike A Chord &#9836;</span></h1>
     </header>
 
     <nav>
@@ -26,13 +29,18 @@
         </ul>
     </nav>
 
+    <!-- Hero Image -->
+    <div id="hero" class="tab-desk">
+        <img src="./images/music-notes.png" alt="colorful music notes">
+    </div>
+
     <!-- Use the main area to add main content to the webpage -->
 
     <main>
         <div id="contact">
             <h2>Contact us today to schedule your first lesson.</h2>
-            <p>Phone Number: (814) 555-9228</p>
-            <p>Email: <a href="mailto:lessons@strikeachord.net">lessons@strikeachord.net</a></p>
+            <p class="tel-link"><a href="tel:8145559228">(814)&nbsp;555&nbsp;9228</a></p>
+            <p>Email: <a href="mailto:lessons@strikeachord.net" class="email-link">lessons@strikeachord.net</a></p>
             <p>We are located at: 1122 Music Lane, Chicago, IL 60007</p>
 
             <iframe
@@ -45,7 +53,6 @@
                 loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade">
             </iframe>
-
         </div>
     </main>
 
