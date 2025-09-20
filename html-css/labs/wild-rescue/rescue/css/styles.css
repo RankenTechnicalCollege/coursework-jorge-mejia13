@@ -5,7 +5,7 @@ Date: 8-12-25
 */
 
 /* css reset*/
-body, header, nav, main, footer, img, h1, h3 {
+body, header, nav, main, footer, img, h1, h3, ul {
     margin: 0;
     padding: 0;
     border: 0;
@@ -21,6 +21,24 @@ img {
     display: block;
 }
 
+/* style rules for mobile viewport */
+
+/* Style rules to show mobile class and hide tab-desk class */
+.mobile {
+    display: block;
+}
+
+.tab-desk {
+    display: none;
+}
+
+
+/* Style rules for header area */
+.mobile h1, h3 {
+    padding: 2%;
+    text-align: center;
+}
+
 /* style rules for navigation area */
 nav {
     background-color: #2a1f14;
@@ -28,15 +46,15 @@ nav {
 
 nav ul {
     list-style-type: none;
-    margin: 0%;
     text-align: center;
 }
 
 nav li {
-    display: inline-block;
+    display: block;
     font-size: 1.5em;
     font-family: Geneva,Arial, sans-serif;
     font-weight: bold;
+    border-top: solid 0.5px #f6eee4;
 }
 
 nav li  a {
@@ -49,7 +67,7 @@ nav li  a {
 /* style rules for main content */
 main {
     padding: 2%;
-    font-family: verdana,Arial,sans-serif;
+    font-family: "Lora", serif;
 }
 
 main p {
@@ -69,6 +87,7 @@ main ul {
     text-decoration: none;
     font-weight: bold;
     text-align: center;
+    font-style: italic;
 }
 
 .action {
@@ -77,8 +96,36 @@ main ul {
     text-align: center;
 }
 
+.round {
+    border-radius: 6px;
+}
+
+#info ul {
+    margin-left: 10%;
+}
+
 #contact {
     text-align: center;
+}
+
+.tel-link { 
+    background-color: #2a1f14;
+    padding: 2%;
+    width: 80%;
+    margin: 0 auto;
+}
+.tel-link a {
+    color:#f6eee4;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.mobile h1 {
+    font-family: "Emblema One", system-ui;
+}
+
+.mobile h3 {
+    font-family: "Lora", serif;
 }
 
 /* style rules for footer */
