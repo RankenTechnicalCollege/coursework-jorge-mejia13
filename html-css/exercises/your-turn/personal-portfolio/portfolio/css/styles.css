@@ -9,6 +9,7 @@ body, header, nav, main, ul, li, footer {
     margin: 0;
     padding: 0;
     text-decoration: none;
+    font-family: "Roboto", sans-serif;
 }
 
 body {
@@ -22,6 +23,7 @@ img {
     width: 500px;
     height: 400px;
     margin: auto;
+    border-radius: 16px;
 }
 
 /* style rules for header */
@@ -29,9 +31,14 @@ header {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+header .mobile {
+    font-size: 1em;
+    font-weight: normal;
+}
+
 /* style rules for nav */
 nav ul {
-    list-style: none;
+    list-style-type: none;
 }
 
 nav li {
@@ -50,10 +57,38 @@ nav a {
 /* style rules for main content */
 main {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 1em;
+}
+
+main p {
+    line-height: 1.5;
+    padding: 0 1em;
+}
+
+main .mobile-map {
+    width: 100%;
+}
+
+#contact a {
+    color: #397196;
+}
+
+#about ul {
+    list-style-type: none;
+}
+
+#about li {
+    padding: 0.5em 0;
 }
 
 /* style rules for footer */
 footer {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #397196;
     font-size: 1em;
+    padding: 1.5em 0;
+}
+
+.link a {
+    text-decoration: none;
+    color: #ffffff;
 }
