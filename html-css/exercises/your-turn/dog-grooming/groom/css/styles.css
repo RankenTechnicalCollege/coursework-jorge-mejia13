@@ -9,6 +9,7 @@ body, header, nav, ul, li, img, main, footer {
     display: block;
     margin: 0;
     padding: 0;
+    font-family: "Roboto", sans-serif;
 }
 
 img {
@@ -19,15 +20,21 @@ img {
 header {
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #333333;
 }
 
 header h3 {
     font-weight: 400;
 }
 
+header .hide-mobile {
+    display: none;
+}
+
 /* style rules for nav */
 nav {
     text-align: center;
+    background-color: #333;
 }
 
 nav ul {
@@ -35,18 +42,24 @@ nav ul {
 }
 
 nav li {
-    display: inline-block;
+    display: block;
+    padding: 1em 0;
+    border: 1px solid white;
 }
 
 nav a {
     text-decoration: none;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: #4242a8;
+    color: #8e8eff;
     padding: 2em 1em;
     font-weight: bold;
 }
 
 /* main content */
+main {
+    padding: 0 0.5em;
+}
+
 #home {
     text-align: center;
 }
@@ -54,17 +67,51 @@ nav a {
 #home h2 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 2em;
+    color: #333333;
+}
+
+#services p {
+    font-size: 1em;
+    line-height: 1.5;
+    padding: 0 1em;
+}
+
+#services ul {
+    padding: 1em 0;
+}
+
+#services li {
+    padding: 1em;
+}
+
+#services img {
+    margin: 0.5em 0;
+}
+
+.rounded {
+    border-radius: 25px;
+}
+
+#contact p {
+    padding: 0 1em;
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+.map {
+    width: 100%;
 }
 
 /* footer content */
 footer {
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.75em;
 }
 
 footer p a {
     text-decoration: none;
     font-weight: bold;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Roboto", sans-serif;
     color: #b8b8b8;
 }
