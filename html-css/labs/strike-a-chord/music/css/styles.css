@@ -5,7 +5,7 @@ Date: 8-12-25
 */
 
 /* css reset */
-body, header, nav, main, footer, img, h1, ul {
+body, header, nav, main, footer, img, h1, ul, section, aside, figure, figcaption {
     margin: 0;
     padding: 0;
     border: 0;
@@ -15,6 +15,11 @@ body, header, nav, main, footer, img, h1, ul {
 img {
     max-width: 100%;
     display: block;
+}
+
+/* style rule for box sizing applies to all elements */
+* {
+    box-sizing: border-box;
 }
 
 /* style rules for mobile viewport */
@@ -142,6 +147,34 @@ footer a {
     text-decoration: none;
 }
 
+aside {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #373684;
+    text-shadow: 3px 3px 10px #8280cb;
+}
+
+figure {
+    position: relative;
+    max-width: 275px;
+    margin: 2% auto;
+    border: 8px solid #373684;
+}
+
+figcaption {
+    position: absolute;
+    bottom: 0;
+    background: rgba(55, 54, 132, 0.7);
+    color: #fff;
+    width: 100%;
+    padding: 5% 0;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
 /* Media Query for Tablet Viewport */
 @media screen and (min-width: 550px), print {
     /* Tablet Viewport: Show tab-desk, hide mobile class */
@@ -179,6 +212,16 @@ footer a {
         width: 500px;
         height: 450px;
     }
+
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 20px;
+    }
+
+    aside {
+        grid-column: 1 / span 2;
+    }
 }
 
 /* Media Query for Desktop Viewport */
@@ -211,6 +254,18 @@ footer a {
         width: 29%;
         float: left;
         margin: 0 2%;
+    }
+
+    .grid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    figcaption {
+        font-size: 1em;
+    }
+
+    aside {
+        grid-column: 1 / span 4;
     }
 }
 
