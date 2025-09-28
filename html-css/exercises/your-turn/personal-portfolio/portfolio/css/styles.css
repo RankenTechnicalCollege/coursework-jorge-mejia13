@@ -10,6 +10,7 @@ body, header, nav, main, ul, li, footer {
     padding: 0;
     text-decoration: none;
     font-family: "Roboto", sans-serif;
+    color: #333;
 }
 
 body {
@@ -29,6 +30,7 @@ img {
 /* style rules for header */
 header {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #333;
 }
 
 header .mobile {
@@ -91,4 +93,53 @@ footer {
 .link a {
     text-decoration: none;
     color: #ffffff;
+}
+
+/* Media Query for Tablet */
+@media screen and (min-width: 760px) {
+    .mobile {
+        display: none;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        padding: 1.5em;
+        align-items: center;
+    }
+
+    header h1 {
+        font-size: 1.25em;
+    }
+}
+
+/* Media Query for Desktop */
+@media screen and (min-width: 1200px) {
+    img {
+        border-radius: 0;
+    }
+
+    nav li a:hover {
+        color: #397196;
+        text-decoration: line-through;
+    }
+
+    #about {
+        padding: 2.5em;
+    }
+
+    #about p {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    #contact {
+        padding: 2.5em;
+    }
+
+    #contact p {
+        max-width: 600px;
+        margin: 0 auto 25px auto;
+
+    }
 }
