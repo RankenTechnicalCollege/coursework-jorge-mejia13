@@ -21,6 +21,9 @@ header {
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: #333333;
+    background: #622a9b;
+    background: linear-gradient(90deg,rgba(98, 42, 155, 1) 0%, rgba(87, 199, 133, 1) 85%);
+    padding: 1.5em;
 }
 
 header h3 {
@@ -115,3 +118,63 @@ footer p a {
     font-family: "Roboto", sans-serif;
     color: #b8b8b8;
 }
+
+.tablet-img {
+    display: none;
+}
+
+/* media query for tablet */
+@media screen and (min-width: 768px) {
+    header {
+        padding: 2.5em;
+    }
+
+    .tablet-img {
+        display: block;
+    }
+
+    .mobile-img {
+        display: none;
+    }
+}
+
+/* media query for desktop */
+@media screen and (min-width: 1200px) {
+    nav ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    nav li a:hover {
+        font-size: 1.25em;
+    }
+
+    .columns {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .end {
+        justify-self: end;
+    }
+
+    .center {
+        justify-self: center;
+    }
+}
+
+/* media query for large screen */
+@media screen and (min-width: 1440px) {
+    nav li {
+        border: none;
+    }
+}
+
+/* media query for print */
+@media print {
+    body {
+        background: white;
+        color: black;
+    }
+}
+
