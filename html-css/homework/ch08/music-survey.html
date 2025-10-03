@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./music-styles.css">
+    <title>CH8 Homework (Forms)</title>
+</head>
+<body>
+    <h1>Music Survey</h1>
+
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" class="top-input">
+
+        <label for="name">E-Mail:</label>
+        <input type="text" class="top-input">
+
+        <fieldset>
+            <legend>Select your favorite Music Genre</legend>
+            <label><input type="radio" name="genre" value="Rock">Rock</label>
+            <label><input type="radio" name="genre" value="Pop">Pop Music</label>
+            <label><input type="radio" name="genre" value="HipHop">HipHop</label>
+            <label><input type="radio" name="genre" value="Jazz">Jazz Music</label>
+            <label><input type="radio" name="genre" value="Electronic">Electronic</label>
+            <label><input type="radio" name="genre" value="Country">Country music</label>
+            <label><input type="radio" name="genre" value="RB">R&B</label>
+            <label><input type="radio" name="genre" value="other">Other</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Select what music services that you use (one or more)</legend>
+            <label><input type="checkbox" name="Spotify" value="Spotify">Spotify</label>
+            <label><input type="checkbox" name="Apple Music" value="Apple Music">Apple Music</label>
+            <label><input type="checkbox" name="Amazon Music" value="Amazon Music">Amazon Music</label>
+            <label><input type="checkbox" name="YouTube Music" value="YouTube Music">Youtube Music</label>
+            <label><input type="checkbox" name="SiriusXm" value="SiriusXm">SiriusXm</label>
+            <label><input type="checkbox" name="Tidal" value="Tdal">TIDAL</label>
+            <label><input type="checkbox" name="Qobuz" value="Qobuz">Qobuz</label>
+            <label><input type="checkbox" name="Pandora" value="Pandora">Pandora</label>
+            <label><input type="checkbox" name="iHeartRadio" value="iHeart Radio">iHeart Radio</label>
+            <label><input type="checkbox" name="Deezer" value="Deezer">Deezer</label>
+            <label><input type="checkbox" name="SoundCloud" value="Sound Cloud">Sound Cloud</label>
+            <label><input type="checkbox" name="other" value="other">Other</label>
+        </fieldset>
+
+        <label>What does music do for you?</label>
+        <select name="benefits" multiple size="2">
+            <option value="Relax">Relax</option>
+            <option value="Motivate">Motivate</option>
+            <option value="Focus">Focus</option>
+            <option value="Reflect">Reflect</option>
+            <option value="Escape">Escape</option>
+        </select>
+
+        <label for="favsong">What's your favorite song and what does it mean to you?</label>
+        <textarea id="favsong" name="favsong" rows="3"></textarea>
+
+        <div class="button-group">
+            <button type="submit" class="btn-submit">Submit</button>
+            <button type="reset" class="btn-reset">Reset</button>
+        </div>
+    </form>
+
+    <footer>
+        <p>Jorge Mejia - jorge_mejia@insideranken.org</p>
+    </footer>
+</body>
+</html>
