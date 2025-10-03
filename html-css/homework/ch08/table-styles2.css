@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    margin: 1em 0;
+}
+
+table {
+    border: 1px solid black;
+    margin: 0 auto;
+}
+
+th, td {
+    border: 1px solid black;
+    text-align: left;
+    padding: 2px;
+}
+
+th {
+    background-color: yellow;
+}
+
+.right {
+    text-align: right;
+}
+
+.yellow {
+    background-color: yellow;
+}
