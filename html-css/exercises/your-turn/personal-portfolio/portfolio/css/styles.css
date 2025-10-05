@@ -5,7 +5,7 @@ Date: 8/12/25
 */
 
 /* css reset */
-body, header, nav, main, ul, li, footer {
+body, header, nav, main, ul, li, footer, figcaption, figure {
     margin: 0;
     padding: 0;
     text-decoration: none;
@@ -53,7 +53,7 @@ nav a {
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
-    color: #292828;
+    color: #333;
 }
 
 /* style rules for main content */
@@ -110,6 +110,21 @@ footer {
 
     header h1 {
         font-size: 1.25em;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 20px;
+    }
+
+    .card h2 {
+        text-align: left;
+    }
+
+    .card p {
+        text-align: left;
+        padding: 0;
     }
 }
 
