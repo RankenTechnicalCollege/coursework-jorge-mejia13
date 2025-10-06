@@ -5,7 +5,7 @@ Date: 8/12/25
 */
 
 /* css reset */
-body, header, nav, ul, li, img, main, footer {
+body, header, nav, ul, li, img, main, footer, section {
     display: block;
     margin: 0;
     padding: 0;
@@ -135,6 +135,24 @@ footer p a {
 
     .mobile-img {
         display: none;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        box-shadow: 5px 5px #888888;
+    }
+
+    .card figcaption {
+        margin-top: 10px;
+        color: #333;
+        padding: 1em;
     }
 }
 
