@@ -1,0 +1,21 @@
+.background-image {
+    background-image: url(../img/bg-img.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+}
+
+.products-background-image {
+    background-image: url(../img/products-bg-img.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+}
+
+.card-img-top {
+    height: 300px;
+}
+
+.add-shadow {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
