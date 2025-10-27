@@ -3,14 +3,14 @@
       Project 02-05
 
       Application to create an online calculator
-      Author: 
-      Date:   
+      Author: jorge mejia
+      Date: 10/26/25
 
       Filename: project02-05.js
  */
  
 // Add event handlers for each calculator button sending that buttons value to the runCalculator() function
-document.getElementById("button0").click = function() {
+document.getElementById("button0").onclick = function() {
    runCalculator(0);
 }
 
@@ -55,14 +55,14 @@ document.getElementById("buttonAdd").onclick = function() {
 }
 
 document.getElementById("buttonMinus").onclick = function() {
-   runcalculator("-");
+   runCalculator("-");
 }
 
 document.getElementById("buttonMultiply").onclick = function() {
    runCalculator("*");
 }
 
-document.getElementById("buttonDivide").onclick = function {
+document.getElementById("buttonDivide").onclick = function() {
    runCalculator("/");
 }
 
@@ -88,7 +88,7 @@ function runCalculator(character) {
    let calcValue = document.getElementById("calcWindow").value;
    
    // Add the character to the calculator string or if its empty (the enter key) evaluate the equation
-   (character) ??? calcValue += character : calcValue += " = " + evalEq(calcValue) + "\n";
+   (character) ? calcValue += character : calcValue += " = " + evalEq(calcValue) + "\n";
    
    // Update the characters displayed in the calculator window.
    document.getElementById("calcWindow").value = calc_value;
@@ -100,7 +100,7 @@ function runCalculator(character) {
 // Function to clear the calculator window
 
 function clearCalculator() {
-      document.getElementById("calcwindow").value ="";
+      document.getElementById("calcWindow").value ="";
 }
 
 
