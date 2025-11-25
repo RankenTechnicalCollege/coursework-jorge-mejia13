@@ -11,15 +11,15 @@
 */
 
 // Constructor Function for Chess Piece
-function piece(color, rank) {
-   color = color;    // the color of the piece (white or black)
-   rank = rank;      // the piece rank (Pawn, Knight, Bishop, Rook, Queen, King)
-   square = null;    // the square the piece occupies
-   image = null;     // stores the HTML code representing the image of the piece
+function Piece(color, rank) {
+   this.color = color;    // the color of the piece (white or black)
+   this.rank = rank;      // the piece rank (Pawn, Knight, Bishop, Rook, Queen, King)
+   this.square = null;    // the square the piece occupies
+   this.image = null;     // stores the HTML code representing the image of the piece
 }
 
 // Constructor Function for a Chess Set
-function chessSet(game) {
+function ChessSet(game) {
    this.pieces = []; // empty array of chess pieces used in the game 
    
    for (let i = 0; i < 8; i++) {         // loop through the chess board rows

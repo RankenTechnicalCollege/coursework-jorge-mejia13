@@ -38,14 +38,17 @@ Ball.prototype.moveWithin = function(container) {
    let ballRight = this.xPos = this.radius
 
    if (ballTop < 0 || ballBottom > container.height) {
-      container.yPos += this.yVelocity
-      this.yVelocity = -this.yVelocity
+    	container.yPos += this.yVelocity
+    	this.yVelocity = -this.yVelocity
    }
 
    if (ballLeft < 0 || ballRight > container.width) {
       container.xPos += this.xVelocity
       this.xVelocity = -this.xVelocity
    }
+
+   this.yPos = this.yVelocity
+   this.xPos = this.xVelocity
 }
 
 
@@ -72,8 +75,20 @@ addBall.onclick = function() {
    // Append the ball image to the box
    boxImage.appendChild(ballImage);     
    
-   
-   
+	let newBall = new Ball(BALL_RADIUS)
+	newBall.yPos = (BOX_HEIGHT - BALL_RADIUS) / 2;
+	newBall.xPos = (BOX_WIDTH - BALL_RADIUS) / 2;
+
+	newBall.xVelocity = rand(-10, 10);
+	newBall.yVelocity = rand(-10, 10);
+
+	window.setInterval(function() {
+		newBall.moveWithin(box);
+		ballImage.style.top = newBall.yPos + "px";
+		ballImage.style.left = newBall.xPos + "px";
+		boxImage.style.top = box.yPos + "px";
+		boxImage.style.left = box.xPos + "px";
+	}, 50);
 };
 
 

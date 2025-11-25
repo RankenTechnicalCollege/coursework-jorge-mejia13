@@ -4,19 +4,44 @@
       Project 08-03
 
       Project to build a pizza using object oriented programming
-      Author: 
-      Date:   
+      Author: jorge mejia
+      Date:   11/23/25
 
       Filename: project08-03.js
 */
 
 /*---------------- Object Code ----------------------*/
+let cart = {
+   items: [],
+   addItems: function(foodItem) {
+      this.items.push(foodItem);
+   }
+};
 
+function Pizza() {
+   this.size;
+   this.crust;
+   this.toppings = [];
+}
 
+function Topping(name, side) {
+   this.name = name;
+   this.side = side;
+}
 
+Pizza.prototype.addToCart = function(cart) {
+   cart.items.push(this);
+}
 
+Pizza.prototype.summarize = function() {
+   let summary = "Pizza: ";
+   summary += this.size + "\nCrust type: " + this.crust + "\nToppings:\n";
 
-
+   for (let i = 0; i < this.toppings.length; i++) {
+      summary += this.toppings[i].name + "  (" + (this.toppings[i].side) + ")" ;
+   }
+   return summary;
+}
 
 
 
@@ -81,11 +106,30 @@ function drawPizza() {
 function buildPizza() {
    let checkedToppings = document.querySelectorAll("input.topping:checked"); 
 
+   let myPizza = new Pizza();
+   myPizza.size = pizzaSizeBox.value;
+   myPizza.crust = pizzaCrustBox.value;
+   
+   for (let i = 0; i < checkedToppings.length; i++) {
+      let myTopping = new Topping()
+      myTopping.name = checkedToppings[i].name
+      myTopping.side = checkedToppings[i].value
 
+      myPizza.addTopping(myTopping);
+      
+   }
+   return myPizza;
 }    
 
 // Function to add the built pizza to the shopping cart
 function updateCart() {
+   let myPizza  = buildPizza();
+   cart.addItems(myPizza);
 
+   let p = document.createElement("p");
+   p.textContent = myPizza.summarize();
+   cartBox.appendChild(p);
 
+   clearPizzaImage();
+   clearToppings();
 }  
