@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+main {
+  padding: 50px;
+}
+
+.app {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header, .footer {
+  background-color: #282c34;
+  padding: 20px;
+  color: white;
+}
+
+.header h1 {
+  margin-bottom: 15px;
+}
+
+.product {
+  margin: 20px 0;
+}
+
+.thumbs-rating button {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.thumbs-up {
+  background-color: #4c7aaf;
+  color: white;
+  border: none;
+  border-radius: 25px;
+}
+
+.thumbs-down {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 25px;
+}
